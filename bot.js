@@ -12,7 +12,7 @@ var channel = "509096317138763786";//
 
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**- SoM - SoM - SoM - SoM - SoM - SoM - S SoM - SoM - SoM - SoM - SoM - SoM-**')
-    },1000);
+    },305);
 })
 
 client.login(process.env.BOT_TOKEN);
