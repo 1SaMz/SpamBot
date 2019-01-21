@@ -24,4 +24,16 @@ message.channel.send(` ${args}`); // محطوط # عشان محد يستخدم �
 }
 });
 
+        if(msg.content.startsWith(`credits`)){
+            if(msg.channel.id !== "531248408699338781") return;
+            if(msg.isMentioned(client.user)){
+                farm.set(`farm`, 'blah blah')
+                let args = msg.content.split(` `)
+                msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
+                    const filter = m => m.author.id === msg.authr.id;
+                    msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
+                        if(col.first().content === "cancel"){
+                            return msg.reply(`Canceled!`);
+
+
 client.login(process.env.BOT_TOKEN);
