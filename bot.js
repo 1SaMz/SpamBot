@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const Enmap = require(`enmap`);
+const farm = new Enmap();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
@@ -24,10 +26,6 @@ message.channel.send(` ${args}`); // محطوط # عشان محد يستخدم �
 }
 });
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
-const Enmap = require(`enmap`);
-const farm = new Enmap();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
