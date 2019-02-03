@@ -13,7 +13,7 @@ var server = "531248325366906900";//
 var channel = "531248325366906902";//
 
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**- SoM - SoM - SoM - SoM - SoM - SoM - S SoM - SoM - SoM - SoM - SoM - SoM-**')
+    client.guilds.get(server).channels.get(channel).send('**- Luucass - # سبأآم ككريددتسس قمدأأن فشخ..-**')
     },305);
 })
 
