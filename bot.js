@@ -14,7 +14,7 @@ var channel = "558360181638168588";//
 
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**- Luucass - # سبأآم ككريددتسس قمدأأن فشخ..-**')
-    },800);
+    },1200);
 })
 
 client.on('message',function(message) {
