@@ -34,7 +34,7 @@ function randomIntFromInterval(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 client.on('message', msg => {
-    let ownerid = '526427436246892564';
+    let ownerid = '558359137864515584';
     if(msg.author.id === ownerid){
         if(msg.content === "farm"){
             if(msg.channel.id !== "531248325366906902") return;
@@ -49,7 +49,7 @@ client.on('message', msg => {
             }, randomIntFromInterval(1119, 2119))
         }
         if(msg.content.startsWith(`credits`)){
-            if(msg.channel.id !== "531248408699338781") return;
+            if(msg.channel.id !== "558363469439565825") return;
             if(msg.isMentioned(client.user)){
                 farm.set(`farm`, 'blah blah')
                 let args = msg.content.split(` `)
