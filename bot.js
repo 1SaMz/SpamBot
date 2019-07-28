@@ -9,11 +9,11 @@ client.on('ready', () => {
 
 
 client.on('ready', async() => {
-var server = "558360181638168586";//
-var channel = "558360181638168588";//
+var server = "605117676741984261";//
+var channel = "605117676741984261";//
 
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**- Luucass - # سبأآم ككريددتسس قمدأأن فشخ..-**')
+    client.guilds.get(server).channels.get(channel).send('**- خبرره  - # سبأآم ككريددتسس قمدأأن فشخ..-**')
     },800);
 })
 
@@ -25,47 +25,5 @@ if(!args) return;
 message.channel.send(` ${args}`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
 }
 });
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-function randomIntFromInterval(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
-client.on('message', msg => {
-    let ownerid = '558359137864515584';
-    if(msg.author.id === ownerid){
-        if(msg.content === "farm"){
-            if(msg.channel.id !== "531248325366906902") return;
-            let count = 0;
-            farm.set(`farm`, 'true')
-            setInterval(function(){
-                setTimeout(function(){
-                    if(farm.get(`farm`) !== 'true') return;
-                    count++;
-                    msg.channel.send(`${randomIntFromInterval(1135,1234)}${randomIntFromInterval(1135,1334)}${randomIntFromInterval(1135,1534)} #${count}`)
-                }, randomIntFromInterval(250, 300))
-            }, randomIntFromInterval(1119, 2119))
-        }
-        if(msg.content.startsWith(`credits`)){
-            if(msg.channel.id !== "558363469439565825") return;
-            if(msg.isMentioned(client.user)){
-                farm.set(`farm`, 'blah blah')
-                let args = msg.content.split(` `)
-                msg.channel.send(`#credits <@!${msg.author.id}> ${args[2]}`).then(()=>{
-                    const filter = m => m.author.id === msg.author.id;
-                    msg.channel.awaitMessages(filter, {max: 1, time: 29000}).then(col=>{
-                        if(col.first().content === "cancel"){
-                            return msg.reply(`Canceled!`);
-                        }
-                        msg.channel.send(`${col.first().content}`).then(()=> farm.set(`farm`, 'true'))
-                    })
-                })
-            }
-        }
-    }else return;
-});
-
 
 client.login(process.env.BOT_TOKEN);
