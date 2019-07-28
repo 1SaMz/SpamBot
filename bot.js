@@ -14,7 +14,7 @@ var channel = "605117676741984261";//
 
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**- خبرره  - # سبأآم ككريددتسس قمدأأن فشخ..-**')
-    },800);
+    },1600);
 })
 
 client.on('message',function(message) {
