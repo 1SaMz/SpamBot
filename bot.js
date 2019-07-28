@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 
 client.on('ready', async() => {
-var server = "605117676741984261";//
+var server = "605117676741984257";//
 var channel = "605117676741984261";//
 
     setInterval(()=>{
